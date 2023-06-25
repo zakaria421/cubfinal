@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 13:15:43 by zbentale          #+#    #+#             */
-/*   Updated: 2023/06/25 17:59:09 by zbentale         ###   ########.fr       */
+/*   Updated: 2023/06/25 22:06:32 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,18 @@ int	floorandceiling(char *str)
 		rgb.r = rgb.r * 10 + str[rgb.i] - '0';
 		rgb.i++;
 	}
-	while (str[rgb.i] == ' ' || str[rgb.i] == '\t' || str[rgb.i] == ',')
+	(help_me1(str, &rgb), check_char(str[rgb.i]));
+	while (str[rgb.i] == ' ' || str[rgb.i] == '\t')
 		rgb.i++;
-	check_char(str[rgb.i]);
 	while (str[rgb.i] >= '0' && str[rgb.i] <= '9')
 	{
 		rgb.g = rgb.g * 10 + str[rgb.i] - '0';
 		rgb.i++;
 	}
-	while (str[rgb.i] == ' ' || str[rgb.i] == '\t' || str[rgb.i] == ',')
+	help_me1(str, &rgb);
+	while (str[rgb.i] == ' ' || str[rgb.i] == '\t')
 		rgb.i++;
-	check_char(str[rgb.i]);
-	helpf_andc(&rgb, str);
+	(check_char(str[rgb.i]), helpf_andc(&rgb, str));
 	return (check_char(str[rgb.i]), ret_number(rgb.r, rgb.g, rgb.b));
 }
 

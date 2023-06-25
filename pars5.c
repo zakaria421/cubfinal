@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 18:43:29 by zbentale          #+#    #+#             */
-/*   Updated: 2023/06/25 19:12:42 by zbentale         ###   ########.fr       */
+/*   Updated: 2023/06/25 22:07:49 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,10 @@ void	helpf_andc(t_rgb *rgb, char *str)
 		rgb->b = rgb->b * 10 + str[rgb->i] - '0';
 		rgb->i++;
 	}
+	while (str[rgb->i] == ' ' || str[rgb->i] == '\t')
+		rgb->i++;
+	if (str[rgb->i] != '\n')
+		write_error("Error: invalid color\n");
 }
 
 int	help_direction_take(int i, t_map *map, int test)

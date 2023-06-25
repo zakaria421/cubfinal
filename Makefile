@@ -21,6 +21,7 @@ SRC = pars.c\
 	  pars3.c\
 	  pars4.c\
 	  pars5.c\
+	  pars6.c\
 
 
 OBJECT = ${SRC:.c=.o}
