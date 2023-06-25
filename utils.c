@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/24 10:51:47 by zbentalh          #+#    #+#             */
-/*   Updated: 2023/06/25 19:11:51 by zbentale         ###   ########.fr       */
+/*   Updated: 2023/06/25 20:54:20 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_stlen_v2(char **str, int y)
 	int	i;
 
 	i = 0;
-	while (str[y][i])
+	while (str[y] && str[y][i])
 		i++;
 	return (i);
 }
