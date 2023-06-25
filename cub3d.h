@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 14:21:09 by zbentale          #+#    #+#             */
-/*   Updated: 2023/06/25 19:11:39 by zbentale         ###   ########.fr       */
+/*   Updated: 2023/06/25 21:06:09 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -215,7 +215,7 @@ int				the_first_char(char *str);
 int				the_last_char(char *str);
 void			help_ifits_valide(t_help *he, t_map *map);
 void			check_if_its_valide(t_map *map);
-void			parse_cub3d_file(char *filename);
+void			parse_cub3d_file(char *filename,int x);
 int				ret_number(int r, int g, int b);
 void			write_error(char *str);
 void			init_help(t_help *he, t_map *map);

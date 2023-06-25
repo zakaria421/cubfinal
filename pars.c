@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 11:40:26 by zbentale          #+#    #+#             */
-/*   Updated: 2023/06/25 19:07:50 by zbentale         ###   ########.fr       */
+/*   Updated: 2023/06/25 21:05:36 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	main(int argc, char **argv)
 	if (argc == 2)
 	{
 		check_format(argv[1]);
-		parse_cub3d_file(argv[1]);
+		parse_cub3d_file(argv[1], 0);
 	}
 	else
 		write_error("Error: invalid number of arguments\n");

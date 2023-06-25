@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 13:15:51 by zbentale          #+#    #+#             */
-/*   Updated: 2023/06/25 19:05:35 by zbentale         ###   ########.fr       */
+/*   Updated: 2023/06/25 21:05:50 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +68,9 @@ void	check_if_its_valide(t_map *map)
 	}
 }
 
-void	parse_cub3d_file(char *filename)
+void	parse_cub3d_file(char *filename, int x)
 {
 	t_map	map;
-	int		x;
 
 	init_map(&map);
 	map.fd = open(filename, O_RDONLY);
